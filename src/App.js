@@ -2,6 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 
+
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+};
+
+const welcomeName = <Welcome name="Rory" />;
+
 function Clock(props) {
   return (
     <div>
@@ -17,7 +25,9 @@ function tick() {
   );
 }
 
-setInterval(tick, 1000)
+setInterval(tick, 1000);
+
+
 
 
 
